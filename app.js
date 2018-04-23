@@ -6,7 +6,9 @@ var db = require('./db');
 // var PermissionController = require('./permission');
 
 var InvoiceController = require('./invoice/InvoiceController');
+var CustomerController = require('./customer/CustomerController');
 
 app.use('/invoice', InvoiceController);
+app.use('/customer', CustomerController);
 
 module.exports = app;
